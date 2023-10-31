@@ -1,13 +1,13 @@
 import React from 'react';
-import {View} from 'react-native';
-import {Text} from '../../components/Text/Text';
-import {TextInput} from '../../components/TextInput/TextInput';
-import {Button} from '../../components/Button/Button';
-import {Icon} from '../../components/Icon/Icon';
+import {Text} from '../../../components/Text/Text';
+import {TextInput} from '../../../components/TextInput/TextInput';
+import {Button} from '../../../components/Button/Button';
+import {Icon} from '../../../components/Icon/Icon';
+import {Screen} from '../../../components/Screen/Screen';
 
-export function Login() {
+export function LoginScreen() {
   return (
-    <View style={{paddingHorizontal: 24}}>
+    <Screen>
       <Text preset="headingLarge" mb="s8">
         Olá
       </Text>
@@ -31,6 +31,6 @@ export function Login() {
       </Text>
       <Button title="Entrar" mt="s40" />
       <Button preset="outline" title="Criar uma conta" mt="s12" />
-    </View>
+    </Screen>
   );
 }
