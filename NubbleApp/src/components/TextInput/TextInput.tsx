@@ -9,7 +9,7 @@ import {
 import {Box, BoxProps} from '../Box/Box';
 import {useAppTheme} from '../../hooks/useAppTheme';
 
-interface TextInputProps extends RNTextInputProps {
+export interface TextInputProps extends RNTextInputProps {
   label: string;
   errorMessage?: string;
   RightComponent?: React.ReactElement;
@@ -40,7 +40,7 @@ export function TextInput({
   return (
     <Box {...boxProps}>
       <Pressable onPress={focusInput}>
-        <Text preset="paragraphMedium" mb="s4">
+        <Text preset="paragraphMedium" mb="s4" color="backgroundContrast">
           {label}
         </Text>
         <Box {...$textInputContainer}>
